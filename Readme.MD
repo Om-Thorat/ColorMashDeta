@@ -1,9 +1,10 @@
 # ColorMash 🎨
-![visitors](https://visitor-badge.glitch.me/badge?page_id=Om-Thorat.ColorMash&left_color=green&right_color=red)
+<!-- ![visitors](https://visitor-badge.glitch.me/badge?page_id=Om-Thorat.ColorMash&left_color=green&right_color=red) -->
 
-## vote [Here](https:/ColorMash.deta.dev)
-## Leads [Here](https:/ColorMash.deta.dev/leads)
 ## Remember Facemash? from [The Social Network](https://www.rottentomatoes.com/m/the-social-network). 💻
+
+### Vote [Here](https://ColorMash.deta.dev)
+### Leads [Here](https://ColorMash.deta.dev/leads)
 
 ### Hosted on [Deta](https://deta.sh)
 ### That's it but just for ColorCombos. 🖌️
