@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel=stylesheet href="{{url_for('static', filename = 'right.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrettyCombos</title>
+</head>
+<body>
+    <div id=nice style="display: flex;
+    flex-direction:column;
+    backdrop-filter: brightness(0.7);">
+    </div>
+    <script>
+        var data = JSON.parse('{{data | safe}}')
+        console.log(data)
+        for(var element in data) {
+            rating = document.createElement("div")
+            value = document.createElement("a")
+            value.innerHTML = data[element]
+            value.style.color = element.slice(0,7)
+            value.style.background = element.slice(7,14)
+            value.style.padding = '5px'
+            rating.append(value)
+            rating.classList.add('rating')
+            document.getElementById('nice').append(rating)
+            mom = document.createElement("div")
+            uh = document.createElement("div")
+            uh.classList.add('colorblock')
+            uh.style.background = element.slice(0,7)
+            c1 = document.createElement("a")
+            c1.classList.add('colorcode')
+            c1.innerHTML = element.slice(0,7)
+            c1.style.display = "none"
+            c1.style.color = element.slice(7,14)
+            uh.append(c1)
+            console.log(element.slice(0,5))
+            hu = document.createElement("div")
+            hu.classList.add('colorblock')
+            hu.style.background = element.slice(7,14)
+            c2 = document.createElement("a")
+            c2.classList.add('colorcode')
+            c2.innerHTML = element.slice(7,14)
+            c2.style.display = "none"
+            c2.style.color = element.slice(0,7)
+            hu.append(c2)
+            mom.style.display = "flex"
+            mom.style.flexdirection = "row"
+            mom.style.padding = "10px"
+            mom.append(uh)
+            mom.append(hu)
+            document.getElementById("nice").append(mom)
+        };
+    </script>
+</body>
+</html>

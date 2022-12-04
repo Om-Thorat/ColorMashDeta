@@ -1,0 +1,41 @@
+.col{
+    background: aliceblue;
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.like{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.side{
+    display: flex;
+    width: 47%;
+    padding: 3%
+}
+body{
+    background-image: url(bg.jpg);
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    flex-direction: column;
+    align-items: center;
+}
+.colorblock{
+    width: 50%;
+    height: 5vh;
+}
+.colorblock:hover .colorcode{
+    display: flex !important;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    font:caption;
+}

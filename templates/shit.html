@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=stylesheet href="{{url_for('static', filename = 'right.css')}}">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<title>PrettyCombos</title>
+</head>
+
+<body>
+	<div style="display: flex;
+	flex-direction: row;
+	height: 98vh;">
+	<div class="side">
+		<div class="col" id=col1 style="border-radius:20px 0px 0px 20px"></div>
+		<div class="col" id=col2 style="border-radius:0px 20px 20px 0px">
+			<div id="like1" onclick="liked1()" class="like">
+				<svg id=heart1 width="72px" height="72px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M36 57.168l-0.864 -0.72C16.56 41.328 11.52 36 11.52 27.36c0 -7.2 5.76 -12.96 12.96 -12.96 5.904 0 9.216 3.312 11.52 5.904 2.304 -2.592 5.616 -5.904 11.52 -5.904 7.2 0 12.96 5.76 12.96 12.96 0 8.64 -5.04 13.968 -23.616 29.088l-0.864 0.72zM24.48 17.28c-5.616 0 -10.08 4.464 -10.08 10.08 0 7.344 4.608 12.24 21.6 26.064 16.992 -13.824 21.6 -18.72 21.6 -26.064 0 -5.616 -4.464 -10.08 -10.08 -10.08 -5.04 0 -7.776 3.024 -9.936 5.472L36 24.624l-1.584 -1.872C32.256 20.304 29.52 17.28 24.48 17.28z" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="side">
+		<div class="col" id=col3 style="border-radius:20px 0px 0px 20px">
+			<div id="like1" onclick="liked2()" class="like">
+				<svg id=heart2 width="72px" height="72px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M36 57.168l-0.864 -0.72C16.56 41.328 11.52 36 11.52 27.36c0 -7.2 5.76 -12.96 12.96 -12.96 5.904 0 9.216 3.312 11.52 5.904 2.304 -2.592 5.616 -5.904 11.52 -5.904 7.2 0 12.96 5.76 12.96 12.96 0 8.64 -5.04 13.968 -23.616 29.088l-0.864 0.72zM24.48 17.28c-5.616 0 -10.08 4.464 -10.08 10.08 0 7.344 4.608 12.24 21.6 26.064 16.992 -13.824 21.6 -18.72 21.6 -26.064 0 -5.616 -4.464 -10.08 -10.08 -10.08 -5.04 0 -7.776 3.024 -9.936 5.472L36 24.624l-1.584 -1.872C32.256 20.304 29.52 17.28 24.48 17.28z" />
+				</svg>
+			</div>
+		</div>
+		<div class="col" id=col4 style="border-radius:0px 20px 20px 0px"></div>
+	</div>
+	</div>
+	<script src="{{url_for('static', filename = 'rancolor.js')}}"></script>
+</body>
+</html>
