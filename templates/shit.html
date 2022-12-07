@@ -7,22 +7,21 @@
 	<title>PrettyCombos</title>
 </head>
 
-<body>
+<body style="margin:5vh 5vw 5vh 5vw;">
 	<div class="right" id=right>
-	<div class="pop">
-		<div class="popup">
-			<a>Welcome</a><br>
-			<a>Hey This is ColorMash 🎨</a><br>
-			<a>Vote for your favoured Combos</a><br>
-			<div style="width:10%" ><img style="width:100%" src="/static/9096840.svg"></div>
-		</div>
-	</div>
-	<div style="display: flex;
+		<!-- <div class="pop">
+			<div class="popup">
+				<a>Welcome</a><br>
+				<a>Hey This is ColorMash 🎨</a><br>
+				<a>Vote for your favoured Combos</a><br>
+			</div>
+		</div> -->
+	<div class="page" style="display: flex;
 	flex-direction: row;
-	height: 98vh;">
+	height: 90vh;">
 	<div class="side">
-		<div class="col" id=col1 style="border-radius:20px 0px 0px 20px"></div>
-		<div class="col" id=col2 style="border-radius:0px 20px 20px 0px">
+		<div class="col col1" id=col1 style="border-radius:20px 0px 0px 20px"></div>
+		<div class="col col2" id=col2 style="border-radius:0px 20px 20px 0px">
 			<div id="like1" onclick="liked1()" class="like">
 				<svg id=heart1 width="72px" height="72px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
 					<path
@@ -31,8 +30,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="side">
-		<div class="col" id=col3 style="border-radius:20px 0px 0px 20px">
+	<div class="side sideR">
+		<div class="col col3" id=col3 style="border-radius:20px 0px 0px 20px">
 			<div id="like1" onclick="liked2()" class="like">
 				<svg id=heart2 width="72px" height="72px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
 					<path
@@ -40,7 +39,7 @@
 				</svg>
 			</div>
 		</div>
-		<div class="col" id=col4 style="border-radius:0px 20px 20px 0px"></div>
+		<div class="col col4" id=col4 style="border-radius:0px 20px 20px 0px"></div>
 	</div>
 	</div>
 	</div>

@@ -7,7 +7,7 @@ user=""
 DETA_BASE_TASK = "ColorCombos"
 
 def getdb(db_name):
-    deta = Deta()
+    deta = Deta(***REMOVED***)
     return deta.Base(db_name)
 
 def get_detabase(func):
@@ -110,3 +110,4 @@ def leads():
     data = dumps(leaddict)
     print(data)
     return (render_template("leads.html",data=(data)))
+app.run(debug=True)
