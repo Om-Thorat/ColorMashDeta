@@ -8,6 +8,15 @@
 </head>
 
 <body>
+	<div class="right" id=right>
+	<div class="pop">
+		<div class="popup">
+			<a>Welcome</a><br>
+			<a>Hey This is ColorMash 🎨</a><br>
+			<a>Vote for your favoured Combos</a><br>
+			<div style="width:10%" ><img style="width:100%" src="/static/9096840.svg"></div>
+		</div>
+	</div>
 	<div style="display: flex;
 	flex-direction: row;
 	height: 98vh;">
@@ -34,6 +43,25 @@
 		<div class="col" id=col4 style="border-radius:0px 20px 20px 0px"></div>
 	</div>
 	</div>
+	</div>
 	<script src="{{url_for('static', filename = 'rancolor.js')}}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+		<script>
+		var setVanta = ()=>{
+		if (window.VANTA) window.VANTA.DOTS({
+		el: right,
+		mouseControls: true,
+		touchControls: true,
+		gyroControls: false,
+		minHeight: 200.00,
+		minWidth: 200.00,
+		scale: 1.00,
+		scaleMobile: 1.00,
+		color: 0x5b643,
+		backgroundColor: 0x0,
+		spacing: 29.00,
+		showLines: false
+		})}</script>
 </body>
 </html>
